@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Helder Novaes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-image: url(img/1.jpeg);
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+            padding: 100px 20px;
+            text-align: center;
+            font-size: 2em;
+            position: relative;
+        }
+        .header-container {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 2, 143);
+    padding-bottom: 100px; /* Dá espaço para a imagem */
+}
+
+.foto-perfil {
+    position: absolute;
+    bottom: 200px; /* Faz a imagem sair para baixo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px; /* Ajusta o tamanho */
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid white; /* Borda opcional */
+}
+        header h1 {
+            position: relative;
+            z-index: 1; /* Esto coloca el texto por encima de la imagen */
+            
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #004466;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .video-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .video-container iframe {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .contacto a {
+            color: #004466;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contacto a:hover {
+            text-decoration: underline;
+        }
+        .toggle-btn {
+            background-color: #004466;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <h1>Bienvenido a Mi Portfolio</h1>
+       
+          </header>
+          <img src="https://media.licdn.com/dms/image/v2/D4E35AQHbh-vBYZlqJw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1738686102744?e=1744045200&v=beta&t=FkeY4q10TxvNBwurZ6gE4iTJnj-FcME97l-r1G83HlY" alt="Foto de Helder Novaes" class="foto-perfil" width="200">
+
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>¡Hola! Soy Helder Novaes, especialista en automatización de hojas de cálculo en Excel utilizando VBA.</p>
+        <p>Tengo experiencia en desarrollar soluciones personalizadas que optimizan procesos y aumentan la eficiencia.</p>
+    </section>
+    <section>
+        <h2>Formación y Experiencia</h2>
+        <ul>
+            <li>Formación en VBA IMPRESIONADOR por #Entrenamientos</li>
+            <li>Experiencia en automatización de procesos para proyectos personales y empresas</li>
+            <li>Conocimientos avanzados en VBA, Excel, Word y PowerPoint</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Portafolio de Proyectos</h2>
+        <button class="toggle-btn" onclick="toggleVideos()">Ver Videos</button>
+        <div id="video-section" class="hidden">
+            <h3>Automatización de Informes Financieros</h3>
+            <p>Creación de hojas de cálculo automatizadas para la generación de informes financieros mensuales.</p>
+            <h3>Programa Completo de Ventas</h3>
+            <p>Desarrollo de un sistema para el control de inventario y gestión de ventas.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Et4MYrKxyzk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fqEO5Eo-DWs" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Testimonios</h2>
+        <p><strong>Sandra, Gerente de Ventas, Cartocruz:</strong> "El trabajo de Helder fue fundamental para mejorar la eficiencia de nuestros procesos."</p>
+    </section>
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>Correo Electrónico: <a href="mailto:helderpes@gmail.com">helderpes@gmail.com</a></p>
+        Teléfono: <a href="https://wa.me/59167728519" target="_blank">+591 67728519</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/helder-santos-40863a217">Mi LinkedIn</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Helder Novaes - Automatización de Excel con VBA</p>
+    </footer>
+    <script>
+        function toggleVideos() {
+            var videoSection = document.getElementById("video-section");
+            if (videoSection.classList.contains("hidden")) {
+                videoSection.classList.remove("hidden");
+            } else {
+                videoSection.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>
