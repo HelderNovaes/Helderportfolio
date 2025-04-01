@@ -36,7 +36,7 @@ Desarrollo de un sistema para el control de inventario y gestión de ventas.
 - **Correo Electrónico:** [helderpes@gmail.com](mailto:helderpes@gmail.com)
 - **Teléfono:** [+591 67728519](https://wa.me/59167728519)
 - **LinkedIn:** [Mi LinkedIn](https://www.linkedin.com/in/helder-santos-40863a217)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/37186ed1-6aab-4bce-acff-b2709b8fa1bd/deploy-status)](https://app.netlify.com/sites/helder-portfolio/deploys)
 ---
 
 © 2025 **Helder Novaes** - Automatización de Excel con VBA
