@@ -2,16 +2,10 @@
 <html lang="es">
 <head>
     <link rel="sitemap" type="application/xml" href="https://helder-portfolio.netlify.app/sitemap.xml" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Helder Novaes es un experto en automatización de Excel utilizando VBA. Ofrecemos soluciones personalizadas para la optimización de procesos en las empresas.">
-    <meta name="description" content="Helder Novaes Portafolio">
-    <meta name="description" content="portafolio VBA">
-    <meta name="description" content="Programador VBA">
-    <meta name="description" content="Automatize suas planilhas com um programador VBA especializado. Criação de macros, UserForms e automação de processos no Excel para empresas e profissionais.">
     <meta name="keywords" content="Automatización de Excel, VBA, consultoría de VBA, optimización de procesos, Excel avanzado, hojas de cálculo automatizadas">
-
     <title>Portfolio - Helder Novaes</title>
     <style>
         body {
@@ -35,24 +29,23 @@
             position: relative;
             text-align: center;
             color: rgb(0, 2, 143);
-            padding-bottom: 100px; /* Dá espaço para a imagem */
+            padding-bottom: 100px;
         }
-
         .foto-perfil {
             position: absolute;
-            bottom: 150px; /* Faz a imagem sair para baixo */
+            bottom: 150px;
             left: 85%;
             transform: translateX(-50%);
-            width: 20vw; /* Usando porcentagem para tornar a imagem responsiva */
-            max-width: 220px; /* Tamanho máximo da imagem */
+            width: 20vw;
+            max-width: 220px;
             height: 20vw;
-            max-height: 220px; /* Garantindo que a imagem não ultrapasse esse tamanho */
+            max-height: 220px;
             border-radius: 50%;
-            border: 4px solid white; /* Borda opcional */
+            border: 4px solid white;
         }
         header h1 {
             position: relative;
-            z-index: 1; /* Isto coloca o texto acima da imagem */
+            z-index: 1;
         }
         section {
             padding: 20px;
@@ -99,6 +92,21 @@
         .hidden {
             display: none;
         }
+        
+        .info-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .info-content {
+            display: none;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            margin-top: 10px;
+        }
 
         /* Responsividade */
         @media (max-width: 768px) {
@@ -107,12 +115,12 @@
             }
             .foto-perfil {
                 bottom: 150px;
-                width: 25vw; /* Aumenta a largura da imagem no celular */
+                width: 25vw;
                 height: 25vw;
                 left: 80%;
             }
             header h1 {
-                font-size: 1.5em; /* Ajusta o tamanho do título */
+                font-size: 1.5em;
             }
         }
 
@@ -121,13 +129,13 @@
                 padding: 60px 20px;
             }
             .foto-perfil {
-                bottom: 220px; /* Ajusta a posição para telas pequenas */
-                width: 30vw; /* Aumenta um pouco mais a largura da imagem */
+                bottom: 220px;
+                width: 30vw;
                 height: 30vw;
                 left: 80%;
             }
             header h1 {
-                font-size: 1.2em; /* Ajusta ainda mais o tamanho do título */
+                font-size: 1.2em;
             }
         }
     </style>
@@ -171,15 +179,31 @@
         <h2>Testimonios</h2>
         <p><strong>Sandra, Gerente de Ventas, Cartocruz:</strong> "El trabajo de Helder fue fundamental para mejorar la eficiencia de nuestros procesos."</p>
     </section>
+    
+    <!-- Sección de Más Información -->
+    <section class="info-container">
+        <button class="toggle-btn" onclick="toggleInfo()">Más Información</button>
+        <div id="info-content" class="info-content">
+            <h2>Habilidades y Servicios</h2>
+            <p>✔ Excel Avanzado, Macros y VBA</p>
+            <p>✔ Desarrollo de UserForms personalizados</p>
+            <p>✔ Automatización de informes y análisis de datos</p>
+            <p>✔ Optimización de procesos en Word y PowerPoint</p>
+            <p>✔ Gestión y configuración avanzada en Outlook y Windows</p>
+        </div>
+    </section>
+
     <section class="contacto">
         <h2>Contacto</h2>
         <p>Correo Electrónico: <a href="mailto:helderpes@gmail.com">helderpes@gmail.com</a></p>
         Teléfono: <a href="https://wa.me/59167728519" target="_blank">+591 67728519</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/helder-santos-40863a217">Mi LinkedIn</a></p>
     </section>
+    
     <footer>
         <p>&copy; 2025 Helder Novaes - Automatización de Excel con VBA</p>
     </footer>
+
     <script>
         function toggleVideos() {
             var videoSection = document.getElementById("video-section");
@@ -187,6 +211,15 @@
                 videoSection.classList.remove("hidden");
             } else {
                 videoSection.classList.add("hidden");
+            }
+        }
+
+        function toggleInfo() {
+            var infoContent = document.getElementById("info-content");
+            if (infoContent.style.display === "none" || infoContent.style.display === "") {
+                infoContent.style.display = "block";
+            } else {
+                infoContent.style.display = "none";
             }
         }
     </script>
